@@ -1,0 +1,311 @@
+body{
+    font-family: "Open Sans",sans-serif;
+    color: #272829
+}
+a{
+    color: #149ddd;
+}
+
+a:hover{
+    color:#37b3ed;
+}
+
+h1, h2, h3, h4, h5,h6{
+    font-family: "Raleway",sans-serif;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0,5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding:0 15px;
+    background:#040b14;
+    overflow-y: auto;
+}
+
+#header .profile img{
+    margin:15px auto;
+    display: block;
+    width:120px;
+    border: 8px solid #2c2f3f;
+}
+
+#header .profile h1{
+    font-size: 24px;
+    margin:0;
+    padding:0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last:center ;
+    font-family: "Poppins",sans-serif;
+}
+
+#header .profile .social-links a{
+    font-size: 18px;
+    display:inline-block;
+    background:#212431;
+    color: #fff;
+    line-height: 1;
+    padding:8px 0;
+    margin-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width:36px;
+    height:36px;
+    transition: 0.3s;
+}
+
+#header .profile .social-links a:hover{
+    background:#149ddd;
+    text-decoration: none;
+}
+
+#main{
+    margin-left: 300px;
+}
+
+@media(max-width:1199px){
+    #header{
+        left:-300px;
+    }
+
+    #main{
+        margin-left: 0;
+    }
+}
+
+.nav-menu{
+    padding-top: 30px;
+}
+
+.nav-menu *{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.nav-menu > ul >li{
+    position: relative;
+    white-space: nowrap;
+}
+
+
+.nav-menu a{
+    display:flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding:12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i {
+    font-size:24px;
+    padding-right: 8px;
+    color: #6f7180; 
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-menu a:hover i ,
+.nav-menu .active > a i,
+.nav-menu li:hover > a i{
+    color: #149ddd;
+}
+
+.mobile-nav-toggle {
+    position: fixed;
+    right:15px;
+    top:15px;
+    z-index: 9998;
+    border:0;
+    background:none;
+    font-size:  24px;
+    transition: all 0.4s;
+    outline: none  !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;  
+}
+
+.mobile-nav-toggle i{
+    color:#149ddd;
+
+}
+
+.mobile-nav-active{
+    overflow:hidden;
+}
+
+.mobile-nav-active #header{
+    left:0;
+
+}
+
+.mobile-nav-active .mobile-nav-toggle{
+    color: #fff; 
+}
+
+#hero{
+    width: 100%;
+    height:100vh;
+    background:url(./../images/chadwick-boseman-uhd-8k-wallpaper.jpg) top center ;
+    background-size: cover;
+}
+
+#hero h1{
+    color:#fff;
+    padding-bottom: 4px;
+    letter-spacing:1px;
+    width: 100%;
+    white-space: nowrap;
+    font-weight:bolder;
+}
+#hero div span{
+    color:#fff;
+    padding-bottom: 4px;
+    letter-spacing:1px;
+    width: 100%;
+    white-space: nowrap;
+    font-weight:bolder;
+}
+
+@media(min-width:1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+
+@media(max-width:768px){
+    #hero h1{
+        font-size:28px;
+        line-height:24px;
+        
+    }
+    #hero h2{
+        font-size:18px;
+        line-height:24px;
+        
+    }
+}
+
+.about h2{
+    font-weight: 700;
+    color: #173b6c;
+
+}
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+
+}
+
+.about .content ul{
+        list-style: none;
+        padding: 0;
+}
+
+.about .content ul li{
+    padding-bottom:  10px;
+}
+
+.about .content ul i{
+    font-size:20px;
+    padding-right: 2px;
+    color: #149ddd;
+}
+.about .content p:last-child{
+    margin-bottom:0;
+}
+
+
+/*  */
+.technical_profiency h2{
+    font-weight: 700;
+    color: #173b6c;
+
+}
+.technical_profiency .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+
+}
+
+/*  */
+.professional_summary h2{
+    font-weight: 700;
+    color: #173b6c;
+
+}
+
+.professional_summary  ul {
+    padding-left: 1em !important;
+    margin-left: 1em;
+  }
+  
+  .professional_summary li {
+    list-style-type: disc !important;
+  }
+  .professional_summary  ul li{
+    padding-bottom:  10px;
+}
+  .professional_summary  ul i{
+    font-size:20px;
+    padding-right: 2px;
+    color: #149ddd;
+}
+
+#myElement{
+    font-size:40px;
+}
+
+.project_overview h2{
+    font-weight: 700;
+    color: #173b6c;
+
+}
+.project_overview {
+    
+    margin-left: 10px;
+    
+}
+.project_overview .row {
+    
+    margin-left: 10px;
+    
+}
+
+.project_overview .row h3{
+    color: #173b6c;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.achievements h2{
+    font-weight: 700;
+    color: #173b6c;
+
+}
+
+.education h2{
+    font-weight: 700;
+    color: #173b6c;
+
+}
+.education th{
+    align-items: center;
+}

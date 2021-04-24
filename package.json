@@ -1,0 +1,11 @@
+{
+  "name": "websiteresume",
+  "version": "1.0.0",
+  "description": "Resume as a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saurabh Bishnoi",
+  "license": "ISC"
+}
